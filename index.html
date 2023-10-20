@@ -7,15 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Sidebars · Bootstrap v5.3</title>
+    <title>Portfolio</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
 
     
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -98,7 +97,9 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="sidebars.css" rel="stylesheet">
+    <!--<link href="sidebars.css" rel="stylesheet">-->
+    <link href="heroes.css" rel="stylesheet">
+    <link href="headers.css" rel="stylesheet">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -136,14 +137,14 @@
           </button>
         </li>
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
             <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
             Dark
             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
         </li>
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="false">
             <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
             Auto
             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
@@ -152,57 +153,86 @@
       </ul>
     </div>
 
-    
-<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-  <symbol id="home" viewBox="0 0 16 16">
-    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
-  </symbol>
-</svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="home" viewBox="0 0 16 16">
+        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+      </symbol>
+    </svg>
 
-<main class="d-flex flex-nowrap">
-  <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
-    <a href="#portfolio"class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <!-- Menu icon by Icons8 "https://icons8.com"-->
-      <svg class="bi pe-none me-2" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="40" height="32"><path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"/></svg>
-      <span class="fs-4" id="portfolio">Portfolio</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#home" class="nav-link active" aria-current="page">
-          <svg class="bi pe-none me-2" width="20" height="20"><use xlink:href="#home"/></svg>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#about-me" class="nav-link link-body-emphasis">
-          <img class="bi pe-none me-2" width="20" height="20" src="https://img.icons8.com/pastel-glyph/64/person-male--v3.png" alt="person-male--v3"/>
-          About Me
-        </a>
-      </li>
-      <li>
-        <a href="#education" class="nav-link link-body-emphasis">
-          <img class="bi pe-none me-2" width="20" height="20" src="https://img.icons8.com/ios-filled/50/book.png" alt="book"/>
-          Education
-        </a>
-      </li>
-      <li>
-        <a href="#projects" class="nav-link link-body-emphasis">
-          <img class="bi pe-none me-2" width="20" height="20" src="https://img.icons8.com/ios/50/group-of-projects.png" alt="group-of-projects"/>
-          Projects
-        </a>
-      </li>
-    </ul>
-    <hr>
-  </div>
+    <main>
+      <div class="my-5" id="home">
+        <img src="background_image.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+        <div class="p-5 text-center bg-body-tertiary">
+          <div class="container py-5">
+            <h1 class="text-body-emphasis">Julian's Portfolio</h1>
+            <p class="col-lg-8 mx-auto lead">
+              A simple portfolio describing a few things about me.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <div class="b-example-divider b-example-vr"></div>
-  
+      <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#home" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#about-me" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          </ul>
+        </header>
+      </div>
+      <div class="b-example-divider"></div>
 
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis" id="about-me">About Me</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Hello, my name is Julian Buendia and I am a student at the University of North Texas. My major is Electrical engineering with a
+            minor in Math and Computer Science. I'm in my third year at UNT and so far it's been going pretty good. I also have an interest in
+            music. I know how to play guitar and trumpet, and have some light knowledge in other instruments as well.
+          </p>
 
-  <div class="b-example-divider b-example-vr"></div>
-</main>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+      </div>
 
-    <script src="sidebars.js"></script></body>
+      <div class="b-example-divider"></div>
+
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis" id="education">Education</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            University of North Texas<br>
+            Bachelors of Science in Electrical Engineering<br>
+            Computer Science Minor<br>
+            Math Minor<br>
+            GPA: 3.94<br>
+          </p>
+        </div>
+      </div>
+      
+      <div class="b-example-divider"></div>
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis" id="projects">Projects</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Library Program using C++
+          </p>
+          <ul>
+            <li>
+              Basic functionality of a library program that keeps inventory of books that are checked in/out, see who checked out books, etc.
+            </li>
+            <li>
+              I achieved this using multiple files, header files and .cpp files, to organize my classes that will collect, contain, and place data from the user.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+    </main>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
